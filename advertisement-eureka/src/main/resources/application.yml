@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 是否同步其他节点数据，这里不需要为false
+    fetch-registry: false
+    # 是否将自己注册到eureka，这里不需要为false
+    register-with-eureka: false
+    server-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
