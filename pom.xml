@@ -11,7 +11,8 @@
 
     <modules>
         <module>advertisement-eureka</module>
-        <module>gateway</module>
+        <module>advertisement-gateway</module>
+        <module>advertisement-service</module>
     </modules>
 
     <name>advertisement</name>
